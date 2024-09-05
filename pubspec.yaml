@@ -1,7 +1,7 @@
 name: dropdown_select_sfd
-description: A new Flutter project.
+description: Simple dropdown select.
 version: 0.0.1
-homepage:
+homepage: https://github.com/FranckSiyapze/dropdown_select_sfd
 
 environment:
   sdk: '>=3.0.5 <4.0.0'
