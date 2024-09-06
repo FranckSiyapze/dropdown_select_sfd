@@ -1,5 +1,5 @@
 name: dropdown_select_sfd
-description: Simple dropdown select.
+description: Dropdown select with dropwdown and icon as leading of each line.
 version: 0.0.1
 homepage: https://github.com/FranckSiyapze/dropdown_select_sfd
 

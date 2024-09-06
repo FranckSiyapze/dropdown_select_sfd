@@ -25,14 +25,14 @@ class DropdownSelectSFD extends StatefulWidget {
 class _DropdownSelectSFDState extends State<DropdownSelectSFD> {
   bool more = false;
   String value = '';
-  Widget icon_value = Text('');
+  Widget iconValue = Text('');
   Color color = const Color.fromRGBO(48, 80, 131, 0.21);
   @override
   void initState() {
     // TODO: implement initState
     super.initState();
     color = widget.color;
-    icon_value = widget.leading;
+    iconValue = widget.leading;
     value = widget.labelTextDefault!;
   }
   @override
@@ -59,7 +59,7 @@ class _DropdownSelectSFDState extends State<DropdownSelectSFD> {
               border: Border.all(color: color),
             ),
             child: ListTile(
-              leading: icon_value,
+              leading: iconValue,
               title: Text(
                 value,
                 style: TextStyle(
@@ -107,7 +107,7 @@ class _DropdownSelectSFDState extends State<DropdownSelectSFD> {
                       onTap: (){
                         setState(() {
                           more = false;
-                          icon_value =  widget.elements[index].icon;
+                          iconValue =  widget.elements[index].icon;
                           value =  widget.elements[index].text;
                         });
                         widget.elements[index].callBack();
