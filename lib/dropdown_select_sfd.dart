@@ -6,11 +6,11 @@ import 'elements.dart';
 
 
 class DropdownSelectSFD extends StatefulWidget {
-  String? labelTextDefault ;
-  Widget leading;
-  Color color;
-  List<listElements> elements;
-  DropdownSelectSFD({
+  final String? labelTextDefault ;
+  final Widget leading;
+  final Color color;
+  final List<ListElements> elements;
+  const DropdownSelectSFD({
     super.key,
     required this.leading,
     required this.color,
@@ -39,7 +39,6 @@ class _DropdownSelectSFDState extends State<DropdownSelectSFD> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-
         InkWell(
           onTap: () {
             setState(() {

@@ -2,14 +2,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class listElements{
+class ListElements{
   final Widget icon;
   final String text;
   final Function callBack;
-  const listElements(this.text,this.icon,this.callBack);
+  const ListElements(this.text,this.icon,this.callBack);
 
-  factory listElements.fromJson(Map<String,dynamic> json){
-    return listElements(
+  factory ListElements.fromJson(Map<String,dynamic> json){
+    return ListElements(
       json['text'] as String,
       json['icon'] as Widget,
       json['callBack'] as Function,
