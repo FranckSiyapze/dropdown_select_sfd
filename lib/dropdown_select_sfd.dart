@@ -25,7 +25,7 @@ class DropdownSelectSFD extends StatefulWidget {
 class _DropdownSelectSFDState extends State<DropdownSelectSFD> {
   bool more = false;
   String value = '';
-  Widget iconValue = Text('');
+  Widget iconValue = const Text('');
   Color color = const Color.fromRGBO(48, 80, 131, 0.21);
   @override
   void initState() {
@@ -78,8 +78,8 @@ class _DropdownSelectSFDState extends State<DropdownSelectSFD> {
 
         if (more)
           Container(
-            margin: EdgeInsets.only(top: 5, left: 12, right: 12),
-            padding: EdgeInsets.only(
+            margin: const EdgeInsets.only(top: 5, left: 12, right: 12),
+            padding: const EdgeInsets.only(
               left: 12,
               right: 12,
               top: 10,
