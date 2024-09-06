@@ -45,7 +45,7 @@ listElements is the object to be used by the list
 its attribute is :
 - “icon” which is a widget (can take an Icon, SvgPicture,etc..)
 - text": the text to be inserted
-- callBack": which is the return function 
+- callBack": A callback function to be executed when this element is interacted with.
 
 3: Use the package in your code.
 ```dart

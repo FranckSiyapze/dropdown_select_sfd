@@ -2,14 +2,30 @@ library dropdown_select_sfd;
 
 import 'package:flutter/material.dart';
 import 'elements.dart';
-/// A Calculator.
 
-
+/// A widget that provides a dropdown selection with custom styling
+/// and behavior options.
 class DropdownSelectSFD extends StatefulWidget {
+  /// The default text to display when no option is selected.
   final String? labelTextDefault ;
+
+  /// An optional leading widget, typically an icon, to display before the dropdown.
   final Widget leading;
+
+  /// The background color of the dropdown.
   final Color color;
+
+  /// The list of elements to display in the dropdown.
   final List<ListElements> elements;
+
+  /// Creates a DropdownSelectSFD widget with the provided configuration.
+  ///
+  /// [color] sets the dropdown's background color.
+  /// [elements] is the list of items that the user can select from.
+  /// [labelTextDefault] is the placeholder text shown before selection.
+  /// [leading] is an optional widget placed before the dropdown.
+
+
   const DropdownSelectSFD({
     super.key,
     required this.leading,

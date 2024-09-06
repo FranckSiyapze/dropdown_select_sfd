@@ -7,3 +7,8 @@
 * Add readme documentation
 * Modify Name of the object
 * Remove unsused import
+
+## 0.0.3
+
+* Update readme documentation
+* Improve code readability and ensure that your Flutter package has sufficient documentation
