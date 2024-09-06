@@ -37,24 +37,6 @@ class MyHomePage extends StatefulWidget {
 
 /// The state for [MyHomePage] widget.
 class _MyHomePageState extends State<MyHomePage> {
-  /// The default text to display in the dropdown selection.
-  String modePaiement = "Veuillez choisir le mode de connexion";
-
-  /// The icon representing the user's profile settings.
-  String icon = "assets/icons/person_params.svg";
-
-  /// The flag image to display, defaulted to a country flag.
-  String flag = 'flags/cmr.png';
-
-  /// Whether to show additional options.
-  bool more = false;
-
-  /// Whether the phone option is enabled.
-  bool phone = false;
-
-  /// Whether the email option is enabled.
-  bool email = false;
-
   /// A list of elements to display in the dropdown.
   List<ListElements> elements = [];
 

@@ -18,3 +18,8 @@
 * Update readme documentation change the import
 * Add the example code
 * format your files run: dart format .
+
+## 0.0.5
+
+* Update the example folder, remove unsused variable .
+* Update readme

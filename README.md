@@ -1,6 +1,6 @@
-# DROPDOWN SELECT SFD v0.0.1
+# DROPDOWN SELECT SFD
 A flutter package for dropdown select
-![screen.png](screen.png)
+<img src="https://siyapze-franck.ca/screen.png" width="240"/>
 
 ## Install
 1: Import the plugin using
@@ -74,7 +74,7 @@ Center(
 - leading : is the icon that appear by defaults
 - elements : this is the list we want to display
 
-![screen_1.png](screen_1.png)
+<img src="https://siyapze-franck.ca/screen_1.png" width="240"/>
 
 
 ## Contribute
