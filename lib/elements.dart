@@ -23,7 +23,8 @@ class ListElements {
     return ListElements(
       json['text'] as String,
       json['icon'] as Widget, // Ensure that the widget is deserialized properly
-      json['callBack'] as Function, // Ensure that the callback is a valid function
+      json['callBack']
+          as Function, // Ensure that the callback is a valid function
     );
   }
 
@@ -32,7 +33,8 @@ class ListElements {
     return {
       'text': text,
       'icon': icon, // Handle serialization of widgets appropriately.
-      'callBack': callBack, // Handle serialization of callback functions if necessary.
+      'callBack':
+          callBack, // Handle serialization of callback functions if necessary.
     };
   }
 }

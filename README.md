@@ -5,7 +5,7 @@ A flutter package for dropdown select
 ## Install
 1: Import the plugin using
 ```dart
- import 'package:dropdown_select_sfd/dropdown_select_sfd.dart';
+ import 'package:dropdown_select_sfd/select.dart';
 ```
 
 2: Initialize your list.
@@ -49,14 +49,23 @@ its attribute is :
 
 3: Use the package in your code.
 ```dart
-DropdownSelectSFD(
-    leading: SvgPicture.asset(
-      icon,
-      height: 24,
+Center(
+    child: Container(
+        padding: EdgeInsets.only(
+          top: MediaQuery.of(context).size.height / 500,
+        ),
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        child: DropdownSelectSFD(
+            leading: const Icon(
+                Icons.settings_suggest,
+                color: Color(0xFF305083),
+            ),
+            color: const Color.fromRGBO(48, 80, 131, 0.54),
+            elements: elements,
+            labelTextDefault: 'Please select a value',
+        ),
     ),
-    color: colorText54,
-    elements: elements,
-    labelTextDefault: 'Please select a value',
 ),
 ```
 

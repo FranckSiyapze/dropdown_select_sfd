@@ -7,7 +7,7 @@ import 'elements.dart';
 /// and behavior options.
 class DropdownSelectSFD extends StatefulWidget {
   /// The default text to display when no option is selected.
-  final String? labelTextDefault ;
+  final String? labelTextDefault;
 
   /// An optional leading widget, typically an icon, to display before the dropdown.
   final Widget leading;
@@ -24,7 +24,6 @@ class DropdownSelectSFD extends StatefulWidget {
   /// [elements] is the list of items that the user can select from.
   /// [labelTextDefault] is the placeholder text shown before selection.
   /// [leading] is an optional widget placed before the dropdown.
-
 
   const DropdownSelectSFD({
     super.key,
@@ -51,6 +50,7 @@ class _DropdownSelectSFDState extends State<DropdownSelectSFD> {
     iconValue = widget.leading;
     value = widget.labelTextDefault!;
   }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -63,7 +63,7 @@ class _DropdownSelectSFDState extends State<DropdownSelectSFD> {
           },
           child: Container(
             margin: const EdgeInsets.only(left: 12, right: 12),
-            padding: const  EdgeInsets.only(
+            padding: const EdgeInsets.only(
               left: 12,
               right: 12,
               top: 0,
@@ -91,7 +91,6 @@ class _DropdownSelectSFDState extends State<DropdownSelectSFD> {
             ),
           ),
         ),
-
         if (more)
           Container(
             margin: const EdgeInsets.only(top: 5, left: 12, right: 12),
@@ -114,17 +113,19 @@ class _DropdownSelectSFDState extends State<DropdownSelectSFD> {
                   itemBuilder: (context, index) {
                     return ListTile(
                       leading: widget.elements[index].icon, // Display the icon
-                      title: Text(widget.elements[index].text,
+                      title: Text(
+                        widget.elements[index].text,
                         style: TextStyle(
                           fontSize: 12,
                           fontFamily: "Inter",
                           color: color,
-                        ),), // Display the text
-                      onTap: (){
+                        ),
+                      ), // Display the text
+                      onTap: () {
                         setState(() {
                           more = false;
-                          iconValue =  widget.elements[index].icon;
-                          value =  widget.elements[index].text;
+                          iconValue = widget.elements[index].icon;
+                          value = widget.elements[index].text;
                         });
                         widget.elements[index].callBack();
                       }, // Trigger the callback
